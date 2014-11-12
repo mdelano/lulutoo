@@ -748,12 +748,12 @@ a:focus,
     font-size:98px;
     line-height: 1.05em;
     font-weight:100;
-    color:#EA8825;
+    /*color:#EA8825;*/
 }
 
 .counter + p {
     font-size:18px;
-    color:#aaa;
+    /*color:#aaa;*/
 }
 
 /*-------------------
@@ -1363,6 +1363,7 @@ a:focus,
     transform:translateY(50px);
     -webkit-transition:-webkit-transform .3s ease-out;
     transition:transform .3s ease-out;
+    /*color:purple;*/
 }
 
 #testimonials-slider li.flex-active-slide{
