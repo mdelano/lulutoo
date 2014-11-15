@@ -88,7 +88,9 @@ a:focus,
 /*----------------------
 ---Main Layout Styles---
 ------------------------*/
-.table th, .table td { border-top: none; }
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+    border: none;
+}
 
 .img-center{
     margin:0 auto;
@@ -103,8 +105,17 @@ a:focus,
 }
 
 .padding-top-lil-bit {
-    padding:25px 0 0;
+    padding-top:50px;
 }
+
+.padding-left {
+    padding-left:100;
+}
+
+.padding-right {
+    padding-right:20px;
+}
+
 
 .margin-bottom{
     margin-bottom: 40px;
@@ -1208,12 +1219,6 @@ a:focus,
     padding-bottom:50px;
 }
 
-.pricing .item:hover,
-.pricing .item.featured {
-    background:#EA8825;
-    color:#fff;
-}
-
 .pricing .item h2 {
     font-size:28px;
     font-weight:700;
@@ -1244,23 +1249,11 @@ a:focus,
     transition:all .3s ease-out;
 }
 
-.pricing .item.featured .icon,
-.pricing .item:hover .icon{
-    color:#EA8825;
-    background:#fff;
-}
-
 .pricing .item .btn-quattro {
     margin-top:20px;
     margin-bottom:0;
     font-size:16px;
     padding:10px 20px;
-}
-
-.pricing .item.featured .btn-quattro,
-.pricing .item:hover .btn-quattro {
-    background: #fff;
-    color:#EA8825;
 }
 
 .pricing .item .price {
