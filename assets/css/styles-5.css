@@ -1727,6 +1727,13 @@ a:focus,
         top:5%;
         margin-left:-90px;
     }
+
+    @media (max-width: 767px) {
+      .header-logo{
+          margin-left:20px;
+      }
+    }
+
     .header-slider{
         margin-top:40px;
     }
