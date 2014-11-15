@@ -88,6 +88,8 @@ a:focus,
 /*----------------------
 ---Main Layout Styles---
 ------------------------*/
+.table th, .table td { border-top: none; }
+
 .img-center{
     margin:0 auto;
 }
@@ -98,6 +100,10 @@ a:focus,
 
 .padding-top {
     padding:100px 0 0;
+}
+
+.padding-top-lil-bit {
+    padding:25px 0 0;
 }
 
 .margin-bottom{
@@ -1258,14 +1264,22 @@ a:focus,
 }
 
 .pricing .item .price {
-    font-size:48px;
+    font-size:18px;
     font-weight:100;
-    line-height:48px;
-    margin-bottom:30px;
+    line-height:18px;
+    margin-bottom:10px;
 }
 
 .pricing .item.featured .price {
     margin-bottom:40px;
+}
+
+.pricing-menu {
+
+}
+
+.pricing-menu + h1{
+    text-align:middle;
 }
 
 /*----------------------
@@ -1810,5 +1824,11 @@ a:focus,
 @media (max-width: 479px) {
     #projects-container .project-item{
         width: 100%;
+    }
+}
+
+@media (max-width: 479px) {
+    .price-header {
+        font-size:6;
     }
 }
