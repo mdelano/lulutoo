@@ -1669,14 +1669,6 @@ a:focus,
   border: none;
 }
 
-th {
-    font-size: 12px;
-}
-
-td {
-  font-size:6px;
-}
-
 .no-margin {
   margin-left:0px;
   margin-right:0px;
