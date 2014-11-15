@@ -1674,7 +1674,7 @@ th {
 }
 
 td {
-  10
+  font-size:6px;
 }
 
 .no-margin {
@@ -1856,4 +1856,14 @@ td {
     .price-header {
         font-size:6;
     }
+}
+
+@media (max-width: 320px) {
+th {
+    font-size: 8px;
+}
+
+td {
+  font-size:10px;
+}
 }
