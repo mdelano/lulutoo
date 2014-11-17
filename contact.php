@@ -46,6 +46,12 @@ if(isset($_POST['submitted'])) {
 		$body = "Name: $name \n\nEmail: $email \n\nMessage: $comments";
 		$headers = 'From: ' .' <'.$email.'>' . "\r\n" . 'Reply-To: ' . $email;
 
+		var_dump($emailTo);
+		var_dump($subject);
+		var_dump($sendCopy);
+		var_dump($body);
+		var_dump($headers);
+
 		mail($emailTo, $subject, $body, $headers);
 
         //Autorespond
