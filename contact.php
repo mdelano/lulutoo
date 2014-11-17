@@ -1,7 +1,7 @@
 <?php
 $emailTo = 'reservations@luluposhhair.com';
 $siteTitle = 'Lulu Posh Hair';
-
+var_dump($_POST);
 error_reporting(E_ALL ^ E_NOTICE); // hide all basic notices from PHP
 
 //If the form is submitted
