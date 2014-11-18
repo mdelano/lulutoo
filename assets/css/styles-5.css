@@ -1655,7 +1655,7 @@ a:focus,
 
 .call_box{
 	position:fixed;
-	bottom:5%;
+	bottom:10%;
 	right:1%;
   margin-right:-15px;
 	-webkit-border-radius: 3px;
