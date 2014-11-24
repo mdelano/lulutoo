@@ -298,4 +298,130 @@ $(document).ready(function() {
 			$(window).stellar('refresh');
 		},1000);
 	}
+
+	$('#contact-form').submit(function() {
+
+		if($('#contact-form').hasClass('clicked')){
+			return false;
+		}
+
+		$('#contact-form').addClass('clicked');
+
+		var buttonCopy = $('#contact-form button').html(),
+			errorMessage = $('#contact-form button').data('error-message'),
+			sendingMessage = $('#contact-form button').data('sending-message'),
+			okMessage = $('#contact-form button').data('ok-message'),
+			hasError = false;
+
+		$('#contact-form .error-message').remove();
+
+		$('.requiredField').each(function() {
+			if($.trim($(this).val()) == '') {
+				var errorText = $(this).data('error-empty');
+				$(this).parents('.controls').append('<span class="error-message" style="display:none;">'+errorText+'.</span>').find('.error-message').fadeIn('fast');
+				$(this).addClass('inputError');
+				hasError = true;
+			} else if($(this).is("input[type='email']") || $(this).attr('name')==='email') {
+				var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+				if(!emailReg.test($.trim($(this).val()))) {
+					var invalidEmail = $(this).data('error-invalid');
+					$(this).parents('.controls').append('<span class="error-message" style="display:none;">'+invalidEmail+'.</span>').find('.error-message').fadeIn('fast');
+					$(this).addClass('inputError');
+					hasError = true;
+				}
+			}
+		});
+
+		if(hasError) {
+			$('#contact-form button').html('<i class="fa fa-times"></i>'+errorMessage);
+			setTimeout(function(){
+				$('#contact-form button').html(buttonCopy);
+				$('#contact-form').removeClass('clicked');
+			},2000);
+		}
+		else {
+			$('#contact-form button').html('<i class="fa fa-spinner fa-spin"></i>'+sendingMessage);
+
+			var formInput = $(this).serialize();
+			$.post($(this).attr('action'),formInput, function(data){
+				$('#contact-form button').html('<i class="fa fa-check"></i>'+okMessage);
+				setTimeout(function(){
+					$('#contact-form button').html(buttonCopy);
+				$('#contact-form').removeClass('clicked');
+				},2000);
+
+				$('#contact-form')[0].reset();
+			});
+		}
+
+		return false;
+	});
 });
+
+
+
+// Create a function to log the response from the Mandrill API
+function log(obj) {
+		$('#response').text(JSON.stringify(obj));
+}
+
+// create a new instance of the Mandrill class with your API key
+var m = new mandrill.Mandrill('EFP0TtWypDVL5ieuKLyQ2w');
+// create a variable for the API call parameters
+var params = {
+		"key": "EFP0TtWypDVL5ieuKLyQ2w",
+		"message": {
+				"text": "",
+				"subject": "Lulu Posh Website Inquiry",
+				"from_email": "",
+				"from_name": "",
+				"to": [
+					{
+							"email": "reservations@luluposhhair.com",
+							"name": "Margaret",
+							"type": "to"
+					}
+				],
+				"headers": {
+						"Reply-To": "reservations@luluposhhair.com"
+				},
+				"important": false,
+				"track_opens": null,
+				"track_clicks": null,
+				"auto_text": null,
+				"auto_html": null,
+				"inline_css": null,
+				"url_strip_qs": null,
+				"preserve_recipients": null,
+				"view_content_link": null,
+				"tracking_domain": null,
+				"signing_domain": null,
+				"return_path_domain": null,
+				"merge": true,
+				"tags": [
+						"website-inquiry"
+				],
+				"metadata": {
+						"website": "luluposhhair.com.com"
+				},
+				"images": [
+						{
+								"type": "image/png",
+								"name": "IMAGECID",
+								"content": "ZXhhbXBsZSBmaWxl"
+						}
+				]
+		}
+}
+
+function sendTheMail(from_email, from_name, text) {
+		console.log("From Email", from_email, "From Name", from_name, "Text", text);
+		params.message.from_email = from_email;
+		params.message.from_name = from_name;
+		params.message.text = text + " " + from_email;
+		m.messages.send(params, function(){
+				$("#inquiry_form").append('<pre id=\"inquiry-response">Thanks for your email! We\'ll get right back to you ;)</pre>');
+		}, function(){
+				$("#inquiry_form").append('<pre id=\"inquiry-response">Looks like there was a problem sending an email to the stackrise team.</pre>');
+		});
+}
