@@ -1,0 +1,25 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    dalli (2.7.2)
+    execjs (2.2.2)
+    json (1.8.1)
+    kgio (2.9.2)
+    memcachier (0.0.2)
+    rack (1.5.2)
+    rack-cache (1.2)
+      rack (>= 0.4)
+    uglifier (2.5.3)
+      execjs (>= 0.3.0)
+      json (>= 1.8.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  dalli
+  kgio
+  memcachier
+  rack
+  rack-cache
+  uglifier (>= 2.1.0)
