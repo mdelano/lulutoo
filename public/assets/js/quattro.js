@@ -356,6 +356,27 @@ $(document).ready(function() {
 
 		return false;
 	});
+
+
+	// Google Analytics Event Tracking
+	$('#about-top-nav-button').on('click', function() {
+		ga('send', 'event', 'button', 'click', 'about-top-nav-button');
+	});
+	$('#services-top-nav-button').on('click', function() {
+		ga('send', 'event', 'button', 'click', 'services-top-nav-button');
+	});
+	$('#products-top-nav-button').on('click', function() {
+		ga('send', 'event', 'button', 'click', 'products-top-nav-button');
+	});
+	$('#team-top-nav-button').on('click', function() {
+		ga('send', 'event', 'button', 'click', 'team-top-nav-button');
+	});
+	$('#pricing-top-nav-button').on('click', function() {
+		ga('send', 'event', 'button', 'click', 'about-top-nav-button');
+	});
+	$('#blog-top-nav-button').on('click', function() {
+		ga('send', 'event', 'button', 'click', 'about-top-nav-button');
+	});
 });
 
 
