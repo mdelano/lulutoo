@@ -377,6 +377,25 @@ $(document).ready(function() {
 	$('#blog-top-nav-button').on('click', function() {
 		ga('send', 'event', 'button', 'click', 'blog-top-nav-button');
 	});
+	$('#cta-reservation-button').on('click', function() {
+		ga('send', 'event', 'cta', 'click', 'cta-reservation-button');
+	});
+
+	$('#about').waypoint(function(){
+		ga('send', 'event', 'section', 'seen', 'about-section');
+	});
+	$('#services').waypoint(function(){
+		ga('send', 'event', 'section', 'seen', 'services-section');
+	});
+	$('#products').waypoint(function(){
+		ga('send', 'event', 'section', 'seen', 'products-section');
+	});
+	$('#team').waypoint(function(){
+		ga('send', 'event', 'section', 'seen', 'team-section');
+	});
+	$('#pricing').waypoint(function(){
+		ga('send', 'event', 'section', 'seen', 'team-section');
+	});
 });
 
 
