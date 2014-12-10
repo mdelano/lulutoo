@@ -372,10 +372,10 @@ $(document).ready(function() {
 		ga('send', 'event', 'button', 'click', 'team-top-nav-button');
 	});
 	$('#pricing-top-nav-button').on('click', function() {
-		ga('send', 'event', 'button', 'click', 'about-top-nav-button');
+		ga('send', 'event', 'button', 'click', 'pricing-top-nav-button');
 	});
 	$('#blog-top-nav-button').on('click', function() {
-		ga('send', 'event', 'button', 'click', 'about-top-nav-button');
+		ga('send', 'event', 'button', 'click', 'blog-top-nav-button');
 	});
 });
 
