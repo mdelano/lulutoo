@@ -899,9 +899,17 @@ a:focus,
 }
 
 /* centered columns styles */
-.col-centered{
-    float: none;
-    margin: 0 auto;
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    vertical-align: top;
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
 }
 
 /*-----------------------
