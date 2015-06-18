@@ -92,10 +92,10 @@
   <!-- ==============================================
   HEADER
   =============================================== -->
-  <header id="home" class="parallax-bg" data-parallax-background="assets/images/group-posed-1-compressed.jpg" data-stellar-background-ratio=".3">
+  <header id="home" class="parallax-bg" data-parallax-background="assets/images/analea.jpg" data-stellar-background-ratio=".3">
 
     <div class="header-content">
-      <img class="header-logo" src="assets/images/lulu-logo.png" alt=""/>
+      <img class="header-logo" src="assets/images/lululogo-xl.png" alt=""/>
 
       <a class="scroll-button scrollto" href="#about"  alt="About Us" title="About Us"><i class="fa fa-angle-down"></i></a>
 
@@ -103,6 +103,14 @@
 
   </header><!--End header -->
 
+  <script type="text/javascript" >
+  console.log("Umm");
+    if(window.innerHeight > window.innerWidth){
+      console.log("Yup");
+      document.getElementById('home').setAttribute('data-parallax-background', 'assets/images/analea-portrait.jpg')
+    }
+  </script>
+  
   <!-- ==============================================
   MAIN NAV
   =============================================== -->

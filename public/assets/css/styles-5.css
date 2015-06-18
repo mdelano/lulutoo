@@ -501,9 +501,8 @@ a:focus,
 
 .header-logo{
   vertical-align: middle;
-  margin-left: 60px;
-  max-width:200;
-  float:left;
+  margin-right: 200px;
+  float:right;
 }
 
 .middle {
@@ -1682,6 +1681,7 @@ a:focus,
   margin-right:0px;
 }
 
+
 @media (max-width: 991px) {
 
 
@@ -1748,15 +1748,9 @@ a:focus,
         font-size:32px;
     }
     .header-logo{
-        width:180px;
+        width:225px;
         top:5%;
-        margin-left:-90px;
-    }
-
-    @media (max-width: 767px) {
-      .header-logo{
-          margin-left:20px;
-      }
+        margin-right:30px;
     }
 
     .header-slider{
