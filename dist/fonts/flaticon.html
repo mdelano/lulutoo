@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flaticon WebFont</title>
+    <link rel="stylesheet" type="text/css" href="flaticon.css">
+    <meta charset="UTF-8">
+    <style>
+    body {
+        font-family: sans-serif;
+        line-height: 1.5;
+        font-size: 16px;
+        padding: 20px;
+        color:#333;
+    }
+    * {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+        font-family: Flaticon;
+        font-size: 30px;
+        font-style: normal;
+        margin-left: 20px;
+        color: #333;
+    }
+    .image p {
+		font-size: 12px;
+		margin: 0px;
+		clear: none;
+		width: 300px;
+		line-height: 40px;
+	}
+    .text {
+        float: left;
+        font-size:14px;
+        margin-top: 15px;
+    }
+    .text ul {
+        margin-left:0px;
+        color:#111;
+        margin-bottom:20px;
+    }
+    .text .ex {
+        font-size:12px;
+        color:#666;
+        margin-left:35px;
+        display:block;
+    }
+    .text ul li {
+        margin-top:10px;
+        list-style:none;
+    }
+    .num {
+        background:#66A523;
+        color:#fff;
+        border-radius:20px;
+        padding:1px;
+        display:inline-block;
+        width:22px;
+        height:22px;
+        text-align:center;
+        margin-right: 5px;
+    }
+    .text ul strong {
+        font-weight:normal;
+        color:#000;
+    }
+    .image {
+        width: 280px;
+        float: left;
+        margin-bottom: 15px;
+        margin-right: 30px;
+    }
+    #glyphs {
+        clear: both;
+    }
+    .image p:nth-child(even) i {
+        clear: none;
+    }
+    .glyph {
+        display: inline-block;
+        width: 120px;
+        margin: 10px;
+        text-align: center;
+        vertical-align: top;
+        background: #FFF;
+    }
+    .glyph .glyph-icon {
+        padding: 10px;
+        display: block;
+        font-family:"Flaticon";
+        font-size: 64px;
+        line-height: 1;
+    }
+    .glyph .glyph-icon:before {
+        font-size: 64px;
+        color: #666;
+        margin-left: 0;
+    }
+    .class-name {
+        font-size: 12px;
+    }
+    .author-name {
+		font-size: 10px;
+	}
+	a{
+		color: #66A523;
+	}
+    .instructions {
+        font-style:italic;
+        font-size:22px;
+        margin-bottom:10px;
+    }
+    .iconsuse {
+        font-size:22px;
+        font-style:italic;
+        padding-top:20px;
+        margin-top:20px;
+        border-top:1px solid #bbb;
+    }
+    .usetitle {
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-style: italic;
+    }
+    .class-name:last-child {
+        font-size: 10px;
+        color:#888;
+    }
+    .class-name:last-child a {
+        font-size: 10px;
+        color:#555;
+    }
+    .class-name:last-child a:hover {
+        color:#66A523;
+    }
+    .glyph > input {
+        display: block;
+        width: 100px;
+        margin: 5px auto;
+        text-align: center;
+        font-size: 12px;
+        cursor: text;
+    }
+    .glyph > input.icon-input {
+        font-family:"Flaticon";
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    h1.logo {
+        font-size: 40px;
+        letter-spacing: -1px;
+        margin-top: -16px;
+        text-transform: lowercase;
+        border-bottom:1px solid #bbb;
+    }
+    h1.logo strong {
+        font-size: 16px;
+        font-family:sans-serif;
+        font-weight:normal;
+        color:#333;
+    }
+    h1.logo a {
+        color:#34302d;
+        text-decoration: none;
+    }
+    h1.logo a span {
+        color:#66A523;
+    }
+    #footer {
+        padding-top:40px;
+        clear:both;
+        text-align:center;
+    }
+    #footer a {
+        color:#66A523;
+    }
+    textarea {
+		margin: 0px;
+		width: 800px;
+		height: 150px;
+		border: 1px solid #CCC;
+		resize: none;
+		background: #EEE;
+    }
+    .author-link, .attrDiv a{
+    	font-size: 12px;
+    	color: #333;
+    	text-decoration: none;
+    }
+    .external {
+    	display: block;
+    }
+    .attrDiv {
+		font-size: 12px;
+	}
+    .attribution {
+        border-top: 1px solid #AAA;
+        margin: 10px 0;
+        padding-top: 15px;
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="logo">
+            <a href="http://www.flaticon.com">
+                <span>FLAT</span>ICON</a>
+            <strong>Font Demo</strong>
+        </h1>
+    </header>
+
+    <section class="demo">
+        <div class="text">
+
+            <div class="instructions">Instructions:</div>
+
+            <ul>
+                <li>
+                    <p>
+                        <span class="num">1</span>Copy the "Fonts" files and CSS files to your website CSS folder.
+                </li>
+                <li>
+                    <p>
+                        <span class="num">2</span>Add the CSS link to your website source code on header.
+                        <br />
+                        <span class="ex">&lt;head&gt;
+                            <br/>...
+                            <br/>&lt;link rel="stylesheet" type="text/css" href="your_website_domain/css_root/flaticon.css"&gt;
+                            <br/>...
+                            <br/>&lt;/head&gt;</span>
+                </li>
+
+                <li>
+                    <p>
+                        <span class="num">3</span>Use the icon class on "display:inline" elements:
+                        <br />
+                        <span class="ex">Use example: &lt;i class=&quot;flaticon-airplane49&quot;&gt;&lt;/i&gt; or &lt;span class=&quot;flaticon-airplane49&quot;&gt;&lt;/span&gt;</span>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+    <section id="glyphs"><div class="glyph">
+		<div class="glyph-icon flaticon-black253"></div>
+		<div class="class-name">.flaticon-black253</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/black-hair_40776">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-brush13"></div>
+		<div class="class-name">.flaticon-brush13</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/brush-tool_40538">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-chair6"></div>
+		<div class="class-name">.flaticon-chair6</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/chair-and-sink-tools-for-wash-hair-at-the-salon_40700">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-chair7"></div>
+		<div class="class-name">.flaticon-chair7</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/chair-and-mirror-of-hair-salon_40844">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-chair8"></div>
+		<div class="class-name">.flaticon-chair8</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/chair-side-view-silhouette_41472">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-close25"></div>
+		<div class="class-name">.flaticon-close25</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/close-hair-salon-signal-with-scissors-image-hanging-of-a-nail_42078">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-closed48"></div>
+		<div class="class-name">.flaticon-closed48</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/closed-scissors_42071">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-hair14"></div>
+		<div class="class-name">.flaticon-hair14</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/hair-salon-situation_40581">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-hair18"></div>
+		<div class="class-name">.flaticon-hair18</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/hair-straighter-and-hair-curler_40603">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-hair20"></div>
+		<div class="class-name">.flaticon-hair20</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/hair-shape_40623">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-hair29"></div>
+		<div class="class-name">.flaticon-hair29</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/hair-shape_40787">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-hair32"></div>
+		<div class="class-name">.flaticon-hair32</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/hair-salon-spray-bottle-silhouette_40824">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-hairdresser14"></div>
+		<div class="class-name">.flaticon-hairdresser14</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/hairdresser-applying-hair-dye-to-a-client-of-hair-salon_42086">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-hairdryer6"></div>
+		<div class="class-name">.flaticon-hairdryer6</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/hairdryer-silhouette-side-view_40708">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-hairdryer7"></div>
+		<div class="class-name">.flaticon-hairdryer7</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/hairdryer-silhouette_41459">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-hairstyle"></div>
+		<div class="class-name">.flaticon-hairstyle</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/hairstyle_40535">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-human86"></div>
+		<div class="class-name">.flaticon-human86</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/human-male-hairs-of-the-head_40715">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-irregular9"></div>
+		<div class="class-name">.flaticon-irregular9</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/irregular-dark-hair-shape_40549">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-long20"></div>
+		<div class="class-name">.flaticon-long20</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/long-female-hair-tincture_40587">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-long21"></div>
+		<div class="class-name">.flaticon-long21</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/long-dark-female-hair-shape_40592">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-long24"></div>
+		<div class="class-name">.flaticon-long24</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/long-female-dark-hair_40664">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-long27"></div>
+		<div class="class-name">.flaticon-long27</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/long-young-female-hair_40752">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-male184"></div>
+		<div class="class-name">.flaticon-male184</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/male-hair-of-head-and-face-shapes_42038">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-male186"></div>
+		<div class="class-name">.flaticon-male186</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/male-hair-of-the-head_42124">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-male190"></div>
+		<div class="class-name">.flaticon-male190</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/male-short-hair-wig-shape_42270">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-open154"></div>
+		<div class="class-name">.flaticon-open154</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/open-hair-salon-signal_42089">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-punk1"></div>
+		<div class="class-name">.flaticon-punk1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/punk-male-head-side-view-silhouette_40692">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-razor"></div>
+		<div class="class-name">.flaticon-razor</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/razor_40574">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-razor2"></div>
+		<div class="class-name">.flaticon-razor2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/razor-tool-black-silhouette-of-the-tool-to-cut-male-hair_40863">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-scissors28"></div>
+		<div class="class-name">.flaticon-scissors28</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/scissors_40734">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-scissors31"></div>
+		<div class="class-name">.flaticon-scissors31</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/scissors_40794">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-scissors33"></div>
+		<div class="class-name">.flaticon-scissors33</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/scissors-and-comb_41463">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-scissors41"></div>
+		<div class="class-name">.flaticon-scissors41</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/scissors-opened-tool_42172">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-scissors42"></div>
+		<div class="class-name">.flaticon-scissors42</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/scissors_42271">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-shampoo"></div>
+		<div class="class-name">.flaticon-shampoo</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/shampoo-application-in-hair-salon_42112">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-shaver1"></div>
+		<div class="class-name">.flaticon-shaver1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/shaver_42203">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-short29"></div>
+		<div class="class-name">.flaticon-short29</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/short-male-hair-shape_42055">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-short37"></div>
+		<div class="class-name">.flaticon-short37</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/short-hair_42207">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-short6"></div>
+		<div class="class-name">.flaticon-short6</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/short-black-hair-shape_40600">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-spray10"></div>
+		<div class="class-name">.flaticon-spray10</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/spray-bottle-hair-salon-tool-silhouette_40601">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-spray11"></div>
+		<div class="class-name">.flaticon-spray11</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/spray-bottles_42087">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-three100"></div>
+		<div class="class-name">.flaticon-three100</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/three-bottles-of-hair-salon_40781">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-woman76"></div>
+		<div class="class-name">.flaticon-woman76</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/woman-hair-extended-in-front-of-the-head_40864">Freepik</a></div></div></section>
+
+<section class="attribution">
+
+	<div class="usetitle">License and attribution:</div><div class="attrDiv">Font generated by <a href="http://www.flaticon.com">flaticon.com</a>
+ under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY</a>. The authors are: <a href="http://www.freepik.com">Freepik</a>.</div><div class="usetitle">Copy the Attribution License:</div>
+
+<textarea onclick="this.focus();this.select();">Font generated by &lt;a href=&quot;http://www.flaticon.com&quot;&gt;flaticon.com&lt;/a&gt;
+ under &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;CC BY&lt;/a&gt;. The authors are: &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;.</textarea>
+
+</section>
+
+<section class="iconsuse">
+    	<div class="usetitle">Examples:</div>
+		<div class="image"><p>&lt;i class=&quot;flaticon-black253&quot;&gt;&lt;/i&gt; <i class="flaticon-black253"></i></p><p>&lt;i class=&quot;flaticon-brush13&quot;&gt;&lt;/i&gt; <i class="flaticon-brush13"></i></p><p>&lt;i class=&quot;flaticon-chair6&quot;&gt;&lt;/i&gt; <i class="flaticon-chair6"></i></p><p>&lt;i class=&quot;flaticon-chair7&quot;&gt;&lt;/i&gt; <i class="flaticon-chair7"></i></p><p>&lt;i class=&quot;flaticon-chair8&quot;&gt;&lt;/i&gt; <i class="flaticon-chair8"></i></p></div><div class="image"><p>&lt;span class=&quot;flaticon-close25&quot;&gt;&lt;/span&gt; <span class="flaticon-close25"></span></p><p>&lt;span class=&quot;flaticon-closed48&quot;&gt;&lt;/span&gt; <span class="flaticon-closed48"></span></p><p>&lt;span class=&quot;flaticon-hair14&quot;&gt;&lt;/span&gt; <span class="flaticon-hair14"></span></p><p>&lt;span class=&quot;flaticon-hair18&quot;&gt;&lt;/span&gt; <span class="flaticon-hair18"></span></p><p>&lt;span class=&quot;flaticon-hair20&quot;&gt;&lt;/span&gt; <span class="flaticon-hair20"></span></p></div><div class="image"><p>&lt;span class=&quot;flaticon-hair29&quot;&gt;&lt;/span&gt; <span class="flaticon-hair29"></span></p><p>&lt;i class=&quot;flaticon-hair32&quot;&gt;&lt;/i&gt; <i class="flaticon-hair32"></i></p><p>&lt;i class=&quot;flaticon-hairdresser14&quot;&gt;&lt;/i&gt; <i class="flaticon-hairdresser14"></i></p><p>&lt;i class=&quot;flaticon-hairdryer6&quot;&gt;&lt;/i&gt; <i class="flaticon-hairdryer6"></i></p><p>&lt;i class=&quot;flaticon-hairdryer7&quot;&gt;&lt;/i&gt; <i class="flaticon-hairdryer7"></i></p></div><div class="image"><p>&lt;span class=&quot;flaticon-hairstyle&quot;&gt;&lt;/span&gt; <span class="flaticon-hairstyle"></span></p><p>&lt;span class=&quot;flaticon-human86&quot;&gt;&lt;/span&gt; <span class="flaticon-human86"></span></p><p>&lt;span class=&quot;flaticon-irregular9&quot;&gt;&lt;/span&gt; <span class="flaticon-irregular9"></span></p><p>&lt;span class=&quot;flaticon-long20&quot;&gt;&lt;/span&gt; <span class="flaticon-long20"></span></p><p>&lt;span class=&quot;flaticon-long21&quot;&gt;&lt;/span&gt; <span class="flaticon-long21"></span></p></div><div class="image"></div>
+</section>
+<div id="footer">
+    <div>Generated by <a href="http://www.flaticon.com">flaticon.com</a>
+    </div>
+</div>
+	</body>
+</html>

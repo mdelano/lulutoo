@@ -19,11 +19,11 @@
     <meta content="summary" name="twitter:card" />
     <meta content="Lulu Posh Hair Salon | North Hampton, NH Hair Salon" name="twitter:title" />
     <meta content="We're a hair salon. We're hair stylists. We're here to reveal and inspire beauty.  To support and uplift self image.  And to generously educate." name="twitter:description" />
-    <meta content="http://luluposhhair.com/images/analea-logo.jpg" name="twitter:image:src" />
+    <meta content="http://luluposhhair.com/images/nyfw_working_logo2.jpg" name="twitter:image:src" />
 
     <meta content="Lulu Posh Hair Salon | North Hampton, NH Hair Salon" property="og:site_name" />
     <meta content="website" property="og:type" />
-    <meta content="http://luluposhhair.com/images/analea-logo.jpg" property="og:image" />
+    <meta content="http://luluposhhair.com/images/nyfw_working_logo2.jpg" property="og:image" />
     <meta content="Lulu Posh Hair Salon | North Hampton, NH Hair Salon" property="og:title" />
     <meta content="http://luluposhhair.com" property="og:url" />
     <meta content="Hair Salon in North Hampton, NH. We're hair stylists. We're here to reveal and inspire beauty.  To support and uplift self image.  And to generously educate." property="og:description" />
@@ -43,13 +43,17 @@
   <!-- ==============================================
   CSS
   =============================================== -->
-  <link rel="stylesheet" href="dist/bundle.css.gz">
 
-  <!-- ==============================================
-  Fonts
-  =============================================== -->
-  <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,100italic,400,300italic' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300' rel='stylesheet' type='text/css'>
+  <!-- build:css css/site.css.gz -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/colorbox.css">
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/flexslider.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/styles-5.css">
+  <link rel="stylesheet" href="css/google.font.raleway.css">
+  <link rel="stylesheet" href="css/google.font.roboto.css">
+  <!-- endbuild -->
 
   <!-- ==============================================
   JS
@@ -59,8 +63,6 @@
     <script src="assets/js/respond.min.js"></script>
     <![endif]-->
 
-  <script type='text/javascript' src='js/vendor/modernizr.min.js.gz' async='async'></script>
-    
   <!-- GA Tracking-->
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -86,12 +88,23 @@
   <!-- ==============================================
   HEADER
   =============================================== -->
-  <header id="home" class="parallax-bg" data-parallax-background="images/analea.jpg" data-stellar-background-ratio=".3">
+  <header id="home" class="parallax-bg" data-parallax-background="images/nyfw_working.jpg" data-stellar-background-ratio=".3">
 
     <div class="header-content">
-      <img class="header-logo" src="images/lululogo-xl.png" alt=""/>
+        <div class="mask">
+            <div class="nyfw">
+                <h1>NEW</h1>
+                <h1>YORK</h1>
+                <h1>FASHION</h1>
+                <h1>WEEK</h1>
+                <h1 class="fall">SPRING / SUMMER</h1>
+                <h1 class="fall">2016</h1>
+                <h3 class="pad-top">#eufora #nyfw</h3>
+            </div>
+        </div>
+      <img class="header-logo" src="images/lululogo-xl.png" alt="Lulu Posh Hair Salon"/>
 
-      <a class="scroll-button scrollto" href="#about"  alt="About Us" title="About Us"><i class="fa fa-angle-down"></i></a>
+      <!--<a class="scroll-button scrollto" href="#about"  alt="About Us" title="About Us"><i class="fa fa-angle-down"></i></a>-->
 
     </div>
 
@@ -99,11 +112,10 @@
 
   <script type="text/javascript" >
     if(window.innerHeight > window.innerWidth){
-      console.log("Yup");
-      document.getElementById('home').setAttribute('data-parallax-background', 'images/analea-portrait.jpg')
+      document.getElementById('home').setAttribute('data-parallax-background', 'images/nyfw_working_portrait.jpg')
     }
   </script>
-  
+
   <!-- ==============================================
   MAIN NAV
   =============================================== -->
@@ -120,7 +132,7 @@
         <!-- ======= LOGO ========-->
         <a class="navbar-brand scrollto" href="#home">
 
-          <img class="site-logo" src="images/lululogo-l-dark.png" alt="logo" />
+          <img class="site-logo" src="images/lululogo-l-dark.png" alt="Lulu Posh Hair Salon" />
 
         </a>
 
@@ -352,7 +364,7 @@ ABOUT
               Lulu Posh Hair Salon offers <a href="http://eufora.net/" target="_blank">Eufora</a> products exclusively. We believe that the Eufora product line out performs and out classes other product lines. Eufora creates products that are good for you, good for the environment, and that make your hair smile.
             </p>
 
-            <a href="http://eufora.net/" target="_blank"><img class="img-responsive img-center scrollimation fade-up" src="images/eufora-logo.png" alt="" /></a>
+            <a href="http://eufora.net/" target="_blank"><img class="img-responsive img-center scrollimation fade-up" src="images/eufora-logo.png" alt="Eufora" /></a>
 
           </div><!--End container -->
 
@@ -369,10 +381,10 @@ ABOUT
             <p class="section-description">We are a small team with great skills. See the faces behind the chairs. </p>
 
             <div class="row row-centered">
-              <div class="col-md-2 col-sm-8 team-member scrollimation fade-up d1 col-centered">
+              <div class="col-md-3 col-sm-8 team-member scrollimation fade-up d1 col-centered">
 
                 <div class="member-thumb">
-                  <img class="img-responsive img-center" src="images/margaret-profile-med.jpg" alt="" />
+                  <img class="img-responsive img-center" src="images/margaret-profile2-med.jpg" alt="Margaret Delano Lulu Posh Hair Salon Owner and Master Stylist" />
 
                   <ul class="member-socials">
                     <li><a href="mailto:margaret@luluposhhair.com"><i class="fa fa-envelope fa-fw"></i></a></li>
@@ -389,10 +401,10 @@ ABOUT
 
               </div>
 
-              <div class="col-md-2 col-sm-8 team-member scrollimation fade-up col-centered">
+              <div class="col-md-3 col-sm-8 team-member scrollimation fade-up col-centered">
 
                 <div class="member-thumb">
-                  <img class="img-responsive img-center" src="images/christine-profile-med.jpg" alt="" />
+                  <img class="img-responsive img-center" src="images/christine-profile-med.jpg" alt="Christine Hawkins Lulu Posh Hair Salon Coordinator" />
 
                   <ul class="member-socials">
                     <li><a href="mailto:christine@luluposhhair.com"><i class="fa fa-envelope fa-fw"></i></a></li>
@@ -409,10 +421,10 @@ ABOUT
 
               </div>
 
-              <div class="col-md-2 col-sm-8 team-member scrollimation fade-up col-centered">
+              <div class="col-md-3 col-sm-8 team-member scrollimation fade-up col-centered">
 
                 <div class="member-thumb">
-                  <img class="img-responsive img-center" src="images/cassandra-profile-med.jpg" alt="" />
+                  <img class="img-responsive img-center" src="images/cassandra-profile2-med.jpg" alt="Cassandra Clark Lulu Posh Hair Stylist" />
 
                   <ul class="member-socials">
                     <li><a href="mailto:cassandra@luluposhhair.com"><i class="fa fa-envelope fa-fw"></i></a></li>
@@ -429,46 +441,68 @@ ABOUT
 
               </div>
 
-              <div class="col-md-2 col-sm-8 team-member scrollimation fade-up col-centered">
+            </div>
+            <div class="row row-centered">
 
-                <div class="member-thumb">
-                  <img class="img-responsive img-center" src="images/abby-profile-med.jpg" alt="" />
+                <div class="col-md-3 col-sm-8 team-member scrollimation fade-up col-centered">
 
-                  <ul class="member-socials">
-                    <li><a href="mailto:abby@luluposhhair.com"><i class="fa fa-envelope fa-fw"></i></a></li>
-                    <li><a href="https://www.facebook.com/pages/Lulu-Posh-Hair/224681940937941"><i class="fa fa-facebook fa-fw"></i></a></li>
-                  </ul>
+                  <div class="member-thumb">
+                    <img class="img-responsive img-center" src="images/abby-profile2-med.jpg" alt="Abby Ohara Lulu Posh Hair Junior Stylist" />
 
-                </div>
+                    <ul class="member-socials">
+                      <li><a href="mailto:abby@luluposhhair.com"><i class="fa fa-envelope fa-fw"></i></a></li>
+                      <li><a href="https://www.facebook.com/pages/Lulu-Posh-Hair/224681940937941"><i class="fa fa-facebook fa-fw"></i></a></li>
+                    </ul>
 
-                <div class="member-details">
-                  <h4>Abby O'hara</h4>
-                  <p class="title">Junior Stylist</p>
-                  <p>Abby is artistic and considerate with her styling. She has a strong ability to listen and execute. She's wholehearted and positive and is a lovely ingredient in the Lulu Posh recipe for beauty. Abby is a Eufora Elite Team Member.</p>
-                </div>
+                  </div>
 
-              </div>
-              
-              <div class="col-md-2 col-sm-8 team-member scrollimation fade-up col-centered">
-
-                <div class="member-thumb">
-                  <img class="img-responsive img-center" src="images/kate-med.jpg" alt="" />
-
-                  <ul class="member-socials">
-                    <li><a href="mailto:kate@luluposhhair.com"><i class="fa fa-envelope fa-fw"></i></a></li>
-                    <li><a href="https://www.facebook.com/pages/Lulu-Posh-Hair/224681940937941"><i class="fa fa-facebook fa-fw"></i></a></li>
-                  </ul>
+                  <div class="member-details">
+                    <h4>Abby O'hara</h4>
+                    <p class="title">Junior Stylist</p>
+                    <p>Abby is artistic and considerate with her styling. She has a strong ability to listen and execute. She's wholehearted and positive and is a lovely ingredient in the Lulu Posh recipe for beauty. Abby is a Eufora Elite Team Member.</p>
+                  </div>
 
                 </div>
 
-                <div class="member-details">
-                  <h4>Kate Mondor</h4>
-                  <p class="title">Senior Stylist</p>
-                  <p>Kate has practiced hair styling since she was a young girl. She's been cutting and coloring for ten years. She's an educator for Eufora International and still remains eager to learn herself.</p>
+                <div class="col-md-3 col-sm-8 team-member scrollimation fade-up col-centered">
+
+                  <div class="member-thumb">
+                    <img class="img-responsive img-center" src="images/kate-med.jpg" alt="Kate Mondor Lulu Posh Hair Senior Stylist" />
+
+                    <ul class="member-socials">
+                      <li><a href="mailto:kate@luluposhhair.com"><i class="fa fa-envelope fa-fw"></i></a></li>
+                      <li><a href="https://www.facebook.com/pages/Lulu-Posh-Hair/224681940937941"><i class="fa fa-facebook fa-fw"></i></a></li>
+                    </ul>
+
+                  </div>
+
+                  <div class="member-details">
+                    <h4>Kate Mondor</h4>
+                    <p class="title">Senior Stylist</p>
+                    <p>Kate has practiced hair styling since she was a young girl. She's been cutting and coloring for ten years. She's a Eufora International Educator and still remains eager to learn herself.</p>
+                  </div>
+
                 </div>
 
-          
-              </div>
+                <div class="col-md-3 col-sm-8 team-member scrollimation fade-up col-centered">
+
+                  <div class="member-thumb">
+                    <img class="img-responsive img-center" src="images/shelly-profile2-med.jpg" alt="Shelly Chapin Lulu Posh Hair Senior Stylist" />
+
+                    <ul class="member-socials">
+                      <li><a href="mailto:shelly@luluposhhair.com"><i class="fa fa-envelope fa-fw"></i></a></li>
+                      <li><a href="https://www.facebook.com/pages/Lulu-Posh-Hair/224681940937941"><i class="fa fa-facebook fa-fw"></i></a></li>
+                    </ul>
+
+                  </div>
+
+                  <div class="member-details">
+                    <h4>Shelly Chapin</h4>
+                    <p class="title">Senior Stylist</p>
+                    <p>Shelly is a Eufora International Educator with 30 years experience behind the chair. She is a creative cutter and master colorist. Shelly brings tons of expertise and leadership to the Lulu Posh Team.</p>
+                  </div>
+
+                </div>
             </div>
 
           </div>
@@ -486,7 +520,7 @@ ABOUT
 
               <div class="col-md-3 col-sm-6 text-center">
 
-                <h1 class="counter" data-to="3" data-speed="1000">0</h1>
+                <h1 class="counter" data-to="4" data-speed="1000">0</h1>
                 <p>Years in Business</p>
 
               </div>
@@ -995,7 +1029,7 @@ ABOUT
 
               <div class="container text-center">
 
-                <img class="img-responsive img-center footer-logo" src="images/lulu-logo.png" alt="" />
+                <img class="img-responsive img-center footer-logo" src="images/lulu-logo.png" alt="Lulu Posh Hair Salon" />
 
                 <ul class="social-links">
                   <li><a href="https://www.facebook.com/pages/Lulu-Posh-Hair/224681940937941" target="_blank"><i class="fa fa-facebook fa-fw"></i></a></li>
@@ -1013,15 +1047,21 @@ ABOUT
             <!-- ==============================================
             SCRIPTS
             =============================================== -->
-
-            <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js.gz">\x3C/script>')</script>
-
-            <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js' async='async'></script>
-            <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/1.4.11/jquery.scrollTo.min.js' async='async'></script>
-            <script src='http://cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.2/jquery.flexslider-min.js' async='async'></script>
-            <script src='http://cdnjs.cloudflare.com/ajax/libs/stellar.js/0.6.2/jquery.stellar.min.js' async='async'></script>
-            <script src='dist/vendor.min.js.gz' async='async'></script>
-            <script src="dist/all.min.js.gz" async="async"></script>
+            <!-- build:js js/all.js.gz async-->
+            <script src='js/vendor/modernizr.min.js'></script>
+            <script src='js/vendor/jquery-1.8.2.min.js'></script>
+            <script src='js/vendor/jquery.easing.min.js' async='async'></script>
+            <script src='js/vendor/jquery.scrollTo.min.js' async='async'></script>
+            <script src='js/vendor/jquery.flexslider-min.js'></script>
+            <script src='js/vendor/jquery.stellar.min.js'></script>
+            <script src='js/vendor/bootstrap.min.js' async='async'></script>
+            <script src='js/vendor/jquery.masonry.min.js' async='async'></script>
+            <script src='js/vendor/waypoints.min.js'></script>
+            <script src='js/vendor/waypoints-sticky.min.js'></script>
+            <script src='js/vendor/jquery.countTo.min.js' async='async'></script>
+            <script src='js/vendor/mandrill.js'></script>
+            <script src='js/quattro.js'></script>
+            <!-- endbuild -->
 
             <script>
               if(typeof window.orientation !== 'undefined'){

@@ -1,0 +1,143 @@
+@font-face {
+	font-family: "Flaticon";
+	src: url("flaticon.eot");
+	src: url("flaticon.eot#iefix") format("embedded-opentype"),
+	url("flaticon.woff") format("woff"),
+	url("flaticon.ttf") format("truetype"),
+	url("flaticon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+	font-family: Flaticon;
+	font-style: normal;
+}.flaticon-black253:before {
+	content: "\e000";
+}
+.flaticon-brush13:before {
+	content: "\e001";
+}
+.flaticon-chair6:before {
+	content: "\e002";
+}
+.flaticon-chair7:before {
+	content: "\e003";
+}
+.flaticon-chair8:before {
+	content: "\e004";
+}
+.flaticon-close25:before {
+	content: "\e005";
+}
+.flaticon-closed48:before {
+	content: "\e006";
+}
+.flaticon-hair14:before {
+	content: "\e007";
+}
+.flaticon-hair18:before {
+	content: "\e008";
+}
+.flaticon-hair20:before {
+	content: "\e009";
+}
+.flaticon-hair29:before {
+	content: "\e00a";
+}
+.flaticon-hair32:before {
+	content: "\e00b";
+}
+.flaticon-hairdresser14:before {
+	content: "\e00c";
+}
+.flaticon-hairdryer6:before {
+	content: "\e00d";
+}
+.flaticon-hairdryer7:before {
+	content: "\e00e";
+}
+.flaticon-hairstyle:before {
+	content: "\e00f";
+}
+.flaticon-human86:before {
+	content: "\e010";
+}
+.flaticon-irregular9:before {
+	content: "\e011";
+}
+.flaticon-long20:before {
+	content: "\e012";
+}
+.flaticon-long21:before {
+	content: "\e013";
+}
+.flaticon-long24:before {
+	content: "\e014";
+}
+.flaticon-long27:before {
+	content: "\e015";
+}
+.flaticon-male184:before {
+	content: "\e016";
+}
+.flaticon-male186:before {
+	content: "\e017";
+}
+.flaticon-male190:before {
+	content: "\e018";
+}
+.flaticon-open154:before {
+	content: "\e019";
+}
+.flaticon-punk1:before {
+	content: "\e01a";
+}
+.flaticon-razor:before {
+	content: "\e01b";
+}
+.flaticon-razor2:before {
+	content: "\e01c";
+}
+.flaticon-scissors28:before {
+	content: "\e01d";
+}
+.flaticon-scissors31:before {
+	content: "\e01e";
+}
+.flaticon-scissors33:before {
+	content: "\e01f";
+}
+.flaticon-scissors41:before {
+	content: "\e020";
+}
+.flaticon-scissors42:before {
+	content: "\e021";
+}
+.flaticon-shampoo:before {
+	content: "\e022";
+}
+.flaticon-shaver1:before {
+	content: "\e023";
+}
+.flaticon-short29:before {
+	content: "\e024";
+}
+.flaticon-short37:before {
+	content: "\e025";
+}
+.flaticon-short6:before {
+	content: "\e026";
+}
+.flaticon-spray10:before {
+	content: "\e027";
+}
+.flaticon-spray11:before {
+	content: "\e028";
+}
+.flaticon-three100:before {
+	content: "\e029";
+}
+.flaticon-woman76:before {
+	content: "\e02a";
+}
